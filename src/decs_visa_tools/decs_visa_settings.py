@@ -9,13 +9,7 @@ from pathlib import Path
 #############################################
 
 # path to the system settings .env file
-file_path = Path(".env")
-#file_path = Path("../../src/qcodes_contrib_drivers/drivers/OxfordInstruments/_decsvisa/src/.env")
-
-# NB this can also be an
-# /absolute/path/to/file/.env
-
-DOT_ENV_PATH = file_path
+DOT_ENV_PATH = Path("~/.hlab/decs_env").expanduser()
 
 ##############################################
 
