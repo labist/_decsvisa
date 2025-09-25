@@ -179,7 +179,7 @@ class Component(ApplicationSession):
             existing_controller = int(resp.results[0]) != 0
             if existing_controller:
                 logger.info("DECS system is already under control: %s", str(resp.results[1]))
-                return False # APH: Set to true if stuck with API Controller has control and you don't want to restart computer
+                return False # APH HACK: Set to true if stuck with API Controller has control and you don't want to restart computer
             resp = await self.checked_rpc('oi.decs.sessionmanager.claim_system_control')
             if resp.results[1] != self.config.extra['user_name']:
                 logger.info("Failed to claim system control")
