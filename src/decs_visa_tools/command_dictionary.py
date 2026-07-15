@@ -39,6 +39,8 @@ Proteox_cmd_uri = {
     'set_STILL_H_OFF'   : "oi.decs.temperature_control.DRI_STL_H.power",
     "get_CP_T"          : "oi.decs.temperature_control.DRI_CLD_S.temperature",
     "get_SRB_T"         : "oi.decs.temperature_control.SRB_GGS_CL.SRB_GGS_S.temperature",
+    "set_SRB_TARGET"    : "oi.decs.temperature_control.SRB_GGS_CL.setpoint",
+    "get_SRB_TARGET"    : "oi.decs.temperature_control.SRB_GGS_CL.setpoint",
     "get_DR2_T"         : "oi.decs.temperature_control.DRI_PT2_S.temperature",
     "get_PT2_T1"        : "oi.decs.temperature_control.PTR1_PT2_S.temperature",
     "get_DR1_T"         : "oi.decs.temperature_control.DRI_PT1_S.temperature",
